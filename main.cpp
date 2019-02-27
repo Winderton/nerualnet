@@ -44,6 +44,8 @@ int main()
 	}
 
 	std::cout << std::endl << "Done" << std::endl;
+#if defined(_MSC_VER) || defined(_WIN32)
 	system("PAUSE");
+#endif
 	return(0);
 }
